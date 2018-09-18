@@ -1,0 +1,46 @@
+
+body {
+    overflow: hidden;
+    /*background: #fff url("../img/1.jpg") center center fixed;*/
+    background-color: #000000;
+    background-origin:border-box;
+    background-size: cover;
+    /*opacity: 0.9;*/
+    /*ie8兼容*/
+    /*filter:alpha(opacity=90);*/
+
+}
+.content {
+    width: 700px;
+    height: 100px;
+    padding:5px 20px 40px 20px;
+    /*border: 1px solid #000;*/
+    margin: 100px auto;
+    background-color: antiquewhite;
+    /*opacity: 0.9;*/
+}
+.tip {
+    height: 20px;
+}
+
+/*星星海特效*/
+.star {
+    width: 56px;
+    height: 56px;
+    /*background-color: #fff;*/
+    background: url("../img/star.png") no-repeat;
+    /*display: inline-block;*/
+    position: absolute;
+    background-size: 100% 100%;
+    animation: flash 1s alternate infinite;
+    z-index: -1;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

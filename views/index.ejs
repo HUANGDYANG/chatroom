@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <h3>我有帐号!</h3>
+    <p id="tip_login" class="tip"></p>
+
+    <form action="/check" method="post">
+        帐号：
+        <input type="text" id="account_login"/>
+        密码:
+        <input type="password" id="password_login"/>
+
+        <input type="button" value="进入聊天室" id="login"/>
+
+    </form>
+</div>
+<div class="content">
+    <h3>没有帐号？</h3>
+    <form>
+        <p id="tip" class="tip"></p>
+        帐号:
+        <input type="text" id="account">
+        密码:
+        <input type="password" id="password">
+        <button type="button" id="regist">注册一个帐号</button>
+    </form>
+</div>
+</body>
+</html>
